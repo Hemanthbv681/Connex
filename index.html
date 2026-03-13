@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<title>Connex</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" sizes="192x192" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="512x512" href="data:image/png;base64,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">
+<link rel="shortcut icon" href="data:image/png;base64,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">
+<meta name="msapplication-TileImage" content="data:image/png;base64,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">
+<meta name="msapplication-TileColor" content="#EFF6FF">
+
+
+
+
+
+<meta name="theme-color" content="#2563EB">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Connex">
+
+<meta name="mobile-web-app-capable" content="yes">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Syne:wght@700;800&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f0f4ff;
+    --card: #ffffff;
+    --surface: #e8eeff;
+    --border: #c5d0f0;
+    --primary: #1a4fd6;
+    --secondary: #2563eb;
+    --accent: #1e90ff;
+    --green: #10b981;
+    --purple: #6366f1;
+    --text: #0f1c4d;
+    --muted: #6b7db3;
+    --phone-w: 375px;
+    --phone-h: 780px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(135deg, #e8eeff 0%, #f5f7ff 50%, #eaf0ff 100%);
+    font-family: 'Nunito', sans-serif;
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+  }
+  /* PWA MOBILE — fill the whole screen */
+  @media (max-width: 480px) {
+    body {
+      padding: 0 !important;
+      background: var(--bg) !important;
+      justify-content: flex-start;
+    }
+    h1, .subtitle, .nav-pills, .screen-caption { display: none !important; }
+    .phone-wrap { width: 100vw; }
+    .phone-frame {
+      width: 100vw !important;
+      height: 100vh !important;
+      height: 100dvh !important;
+      border-radius: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+    .phone-frame::before { display: none; }
+    .btn-side { display: none; }
+    .screen { border-radius: 0 !important; }
+    .bottom-nav { border-radius: 0 !important; }
+    #splash { border-radius: 0 !important; }
+    #reels .reel-container { border-radius: 0; }
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #1a4fd6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+  }
+  .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
+
+  /* Screen nav */
+  .nav-pills {
+    display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+    margin-bottom: 28px;
+  }
+  .pill {
+    padding: 7px 16px; border-radius: 20px; font-size: 0.78rem; font-weight: 700;
+    cursor: pointer; border: 1.5px solid var(--border); background: var(--card);
+    color: var(--muted); transition: all 0.2s; letter-spacing: 0.3px;
+  }
+  .pill.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+  .pill:hover:not(.active) { border-color: var(--primary); color: var(--text); }
+
+  /* Phone frame */
+  .phone-wrap { position: relative; }
+  .phone-frame {
+    width: var(--phone-w);
+    height: var(--phone-h);
+    background: #f0f4ff;
+    border-radius: 44px;
+    border: 2.5px solid #c5d0f0;
+    box-shadow: 0 0 0 6px #dde5ff, 0 32px 80px rgba(26,79,214,0.18),
+                inset 0 1px 0 rgba(255,255,255,0.9);
+    position: relative;
+    overflow: hidden;
+  }
+  /* Notch */
+  .phone-frame::before {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 28px; background: #f0f4ff;
+    border-radius: 0 0 18px 18px; z-index: 100;
+  }
+  /* Side buttons */
+  .btn-side {
+    position: absolute; width: 3px; height: 60px;
+    background: #c5d0f0; border-radius: 2px;
+  }
+  .btn-side.vol { right: -5px; top: 120px; }
+  .btn-side.pwr { left: -5px; top: 160px; height: 40px; }
+
+  /* Screen */
+  .screen {
+    width: 100%; height: 100%;
+    position: absolute; top: 0; left: 0;
+    display: none; flex-direction: column;
+    border-radius: 44px;
+    overflow: hidden;
+  }
+  .screen.active { display: flex; }
+
+  /* Status bar */
+  .status-bar {
+    height: 44px; padding: 10px 24px 0;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-shrink: 0; z-index: 10;
+  }
+  .status-time { font-size: 0.78rem; font-weight: 800; color: var(--text); }
+  .status-icons { display: flex; gap: 5px; align-items: center; font-size: 0.7rem; }
+
+  /* ======================== SPLASH ======================== */
+  #splash {
+    background: linear-gradient(160deg, #EFF6FF 0%, #F8FBFF 50%, #E0F2FE 100%);
+    justify-content: center; align-items: center;
+  }
+  .splash-glow {
+    position: absolute;
+    width: 320px; height: 320px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(37,99,235,0.22) 0%, rgba(56,189,248,0.1) 50%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite;
+  }
+  .splash-glow2 {
+    position: absolute; width: 180px; height: 180px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(56,189,248,0.18) 0%, transparent 70%);
+    animation: pulse 3s 1.5s ease-in-out infinite; top: 25%; left: 60%;
+  }
+  @keyframes pulse { 0%,100%{transform:scale(1);opacity:0.7} 50%{transform:scale(1.2);opacity:1} }
+  @keyframes logoIn { from{opacity:0;transform:scale(0.4) rotate(-15deg)} to{opacity:1;transform:scale(1) rotate(0deg)} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes orbitSpin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+
+  .splash-logo {
+    display: flex; flex-direction: column; align-items: center; z-index: 1;
+  }
+  .splash-icon {
+    width: 112px; height: 112px; border-radius: 34px;
+    background: transparent;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 0 0 2px rgba(56,189,248,0.2), 0 0 0 6px rgba(37,99,235,0.08),
+                0 24px 64px rgba(37,99,235,0.4), 0 8px 20px rgba(56,189,248,0.2);
+    animation: logoIn 0.75s cubic-bezier(0.34,1.56,0.64,1) both;
+    position: relative; overflow: hidden;
+  }
+  .splash-icon::before {
+    content: ''; position: absolute; inset: 0; border-radius: 34px;
+    background: transparent;
+  }
+  .connex-svg { width: 112px; height: 112px; border-radius: 34px; }
+  .connex-svg { width: 74px; height: 74px; position: relative; z-index: 1; }
+
+  .splash-name {
+    font-family: 'Pacifico', cursive; font-size: 2.6rem; font-weight: 400; letter-spacing: 0px;
+    animation: fadeUp 0.5s 0.35s ease both; opacity: 0;
+  }
+  .splash-name .n-part {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .splash-name .x-part {
+    background: linear-gradient(135deg, #1e40af, #2563EB);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .splash-tagline {
+    color: #64748b; font-size: 0.75rem; margin-top: 8px;
+    letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700;
+    animation: fadeUp 0.5s 0.55s ease both; opacity: 0;
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(37,99,235,0.18); }
+  .dot.active { background: linear-gradient(135deg, #2563EB, #38BDF8); width: 22px; border-radius: 4px; }
+
+
+  /* ======================== INTENT MODAL ======================== */
+  #intent {
+    background: linear-gradient(180deg, #f0f4ff 0%, #ffffff 100%);
+  }
+  .intent-body {
+    flex: 1; display: flex; flex-direction: column;
+    padding: 24px 20px; justify-content: center; align-items: center; gap: 14px;
+  }
+  .intent-greeting {
+    font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800;
+    text-align: center; line-height: 1.3; margin-bottom: 8px; color: #0f1c4d;
+  }
+  .intent-sub { color: var(--muted); font-size: 0.85rem; text-align: center; margin-bottom: 16px; }
+  .intent-card {
+    width: 100%; padding: 16px 20px; border-radius: 18px;
+    border: 1.5px solid var(--border); background: #ffffff;
+    display: flex; align-items: center; gap: 14px; cursor: pointer;
+    transition: all 0.2s; box-shadow: 0 2px 12px rgba(26,79,214,0.07);
+  }
+  .intent-card:hover { border-color: var(--primary); background: #f0f4ff; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(26,79,214,0.15); }
+  .intent-card:hover .ic-icon { transform: scale(1.1); }
+  .ic-icon {
+    width: 48px; height: 48px; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center; font-size: 1.5rem;
+    flex-shrink: 0; transition: transform 0.2s;
+  }
+  .ic-text h3 { font-size: 0.95rem; font-weight: 800; }
+  .ic-text p { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+
+  /* ======================== FEED ======================== */
+  #feed { background: #f0f4ff; }
+  .feed-header {
+    padding: 44px 20px 12px;
+    display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;
+    background: #ffffff; border-bottom: 1px solid var(--border);
+  }
+  .feed-title { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 800; }
+  .feed-actions { display: flex; gap: 12px; align-items: center; }
+  .icon-btn {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: #e8eeff; display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; cursor: pointer; border: 1px solid var(--border);
+  }
+
+  /* Stories */
+  .stories-row {
+    display: flex; gap: 12px; padding: 8px 20px 16px; overflow-x: auto; flex-shrink: 0;
+    background: #ffffff; border-bottom: 1px solid var(--border);
+  }
+  .stories-row::-webkit-scrollbar { display: none; }
+  .story {
+    display: flex; flex-direction: column; align-items: center; gap: 5px; cursor: pointer; flex-shrink: 0;
+  }
+  .story-ring {
+    width: 56px; height: 56px; border-radius: 50%;
+    padding: 2.5px;
+    background: linear-gradient(135deg, var(--primary), var(--purple));
+  }
+  .story-ring.add-story { background: #e8eeff; border: 2px dashed var(--border); }
+  .story-avatar {
+    width: 100%; height: 100%; border-radius: 50%;
+    background: #e8eeff; display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; border: 2px solid #fff;
+  }
+  .story-name { font-size: 0.65rem; color: var(--muted); font-weight: 600; }
+
+  .feed-scroll { flex: 1; overflow-y: auto; padding: 8px 0 80px; background: #f0f4ff; }
+  .feed-scroll::-webkit-scrollbar { display: none; }
+  .post-card {
+    margin: 0 12px 10px; background: #ffffff; padding: 14px 20px 0;
+    border-radius: 18px; border: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(26,79,214,0.06);
+  }
+  .post-header { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+  .post-avatar {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--purple), var(--accent));
+    display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;
+  }
+  .post-meta h4 { font-size: 0.85rem; font-weight: 800; color: #0f1c4d; }
+  .post-meta span { font-size: 0.72rem; color: var(--muted); }
+  .post-more { margin-left: auto; color: var(--muted); font-size: 1.2rem; cursor: pointer; }
+  .mood-tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .mood-tag.happy { background: rgba(26,79,214,0.1); color: #1a4fd6; }
+  .mood-tag.sad { background: rgba(99,102,241,0.1); color: #6366f1; }
+  .mood-tag.love { background: rgba(30,144,255,0.1); color: #1e90ff; }
+  .post-text { font-size: 0.85rem; line-height: 1.6; color: #2d3a6b; margin-bottom: 12px; }
+  .post-image {
+    margin: 0 -20px; height: 200px;
+    background: linear-gradient(135deg, #dce8ff, #e8eeff);
+    display: flex; align-items: center; justify-content: center; font-size: 3rem;
+    position: relative; overflow: hidden;
+  }
+  .post-image::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(0deg, rgba(26,79,214,0.08) 0%, transparent 50%);
+  }
+  .post-actions {
+    display: flex; gap: 20px; padding: 12px 0;
+    border-top: 1px solid var(--border); margin-top: 0;
+  }
+  .action-btn {
+    display: flex; align-items: center; gap: 6px; font-size: 0.78rem;
+    color: var(--muted); cursor: pointer; transition: color 0.2s;
+  }
+  .action-btn:hover { color: var(--primary); }
+  .action-btn .icon { font-size: 1rem; }
+
+  /* ======================== REELS ======================== */
+  #reels { background: #000; }
+  .reel-container { flex: 1; position: relative; overflow: hidden; }
+  .reel-bg {
+    position: absolute; inset: 0;
+    background: linear-gradient(160deg, #0a001a 0%, #001a0a 100%);
+    display: flex; align-items: center; justify-content: center; font-size: 5rem;
+  }
+  .reel-overlay {
+    position: absolute; inset: 0; padding: 60px 16px 100px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 50%);
+  }
+  .reel-user { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .reel-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 2px solid var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--purple));
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+  }
+  .reel-user-info h4 { font-size: 0.9rem; font-weight: 800; }
+  .reel-user-info p { font-size: 0.72rem; color: rgba(255,255,255,0.6); }
+  .follow-btn {
+    margin-left: auto; padding: 5px 14px; border-radius: 20px;
+    border: 1.5px solid #fff; font-size: 0.75rem; font-weight: 800; cursor: pointer;
+    background: transparent; color: #fff;
+  }
+  .reel-caption { font-size: 0.83rem; line-height: 1.6; color: rgba(255,255,255,0.85); margin-bottom: 8px; }
+  .reel-mood {
+    display: inline-flex; gap: 6px; align-items: center;
+    font-size: 0.72rem; color: rgba(255,255,255,0.5); margin-bottom: 16px;
+  }
+  .reel-progress {
+    display: flex; gap: 3px; margin-bottom: 0;
+  }
+  .progress-seg {
+    height: 2px; flex: 1; border-radius: 2px; background: rgba(255,255,255,0.25);
+    overflow: hidden;
+  }
+  .progress-fill { height: 100%; background: #fff; width: 60%; }
+
+  /* Reel side actions */
+  .reel-side {
+    position: absolute; right: 14px; bottom: 120px;
+    display: flex; flex-direction: column; gap: 20px; align-items: center;
+  }
+  .reel-action {
+    display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer;
+  }
+  .reel-action-icon {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; backdrop-filter: blur(8px);
+  }
+  .reel-action span { font-size: 0.68rem; color: rgba(255,255,255,0.7); }
+
+  /* ======================== PROFILE ======================== */
+  #profile { background: #f0f4ff; overflow-y: auto; }
+  .profile-header {
+    padding: 44px 20px 20px;
+    background: linear-gradient(180deg, #dce8ff 0%, #f0f4ff 100%);
+    flex-shrink: 0;
+  }
+  .profile-top { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+  .profile-pic {
+    width: 72px; height: 72px; border-radius: 50%; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--primary), var(--purple));
+    display: flex; align-items: center; justify-content: center; font-size: 2rem;
+    border: 3px solid var(--primary);
+  }
+  .profile-info { flex: 1; }
+  .profile-name { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 800; color: #0f1c4d; }
+  .profile-handle { color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
+  .profile-bio { font-size: 0.82rem; color: #2d3a6b; margin-top: 6px; line-height: 1.5; }
+  .profile-stats {
+    display: flex; gap: 0; margin: 16px 0;
+    background: #ffffff; border-radius: 14px; overflow: hidden;
+    border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(26,79,214,0.06);
+  }
+  .stat-item {
+    flex: 1; padding: 12px 8px; text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 800; color: #1a4fd6; }
+  .stat-label { font-size: 0.65rem; color: var(--muted); margin-top: 2px; }
+  .profile-actions { display: flex; gap: 8px; }
+  .prof-btn {
+    flex: 1; padding: 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 800;
+    cursor: pointer; border: 1.5px solid var(--border); background: #ffffff; color: #0f1c4d;
+    text-align: center;
+  }
+  .prof-btn.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+
+  .mood-history { padding: 20px; background: #f0f4ff; }
+  .section-label {
+    font-family: 'Syne', sans-serif; font-size: 0.85rem; font-weight: 800;
+    color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px;
+  }
+  .mood-timeline { display: flex; flex-direction: column; gap: 10px; }
+  .mood-entry {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px; border-radius: 14px; background: #ffffff;
+    border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(26,79,214,0.05);
+  }
+  .mood-emoji { font-size: 1.5rem; }
+  .mood-info { flex: 1; }
+  .mood-info h4 { font-size: 0.82rem; font-weight: 800; color: #0f1c4d; }
+  .mood-info p { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+  .mood-time { font-size: 0.68rem; color: var(--muted); }
+
+  .post-grid { padding: 0 20px 80px; background: #f0f4ff; }
+  .grid-row { display: flex; gap: 3px; margin-bottom: 3px; }
+  .grid-cell {
+    flex: 1; height: 110px; border-radius: 12px;
+    background: #ffffff; display: flex; align-items: center; justify-content: center;
+    font-size: 2rem; cursor: pointer; position: relative; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .grid-cell::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(26,79,214,0.04), rgba(99,102,241,0.04));
+  }
+
+  /* ======================== BOTTOM NAV ======================== */
+  .bottom-nav {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 72px; background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-around;
+    padding: 0 12px 8px; z-index: 50; border-radius: 0 0 44px 44px;
+  }
+  .nav-item {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    cursor: pointer; padding: 8px 14px; border-radius: 12px; transition: all 0.2s;
+    flex: 1;
+  }
+  .nav-item.active .nav-icon-wrap { background: var(--primary); }
+  .nav-icon-wrap {
+    width: 36px; height: 28px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; font-size: 1.05rem;
+    transition: all 0.2s; background: #e8eeff;
+  }
+  .nav-label { font-size: 0.6rem; font-weight: 700; color: var(--muted); }
+  .nav-item.active .nav-label { color: var(--primary); }
+
+  /* ======================== BOTTOM CAPTION ======================== */
+  .screen-caption {
+    text-align: center; color: var(--muted); font-size: 0.72rem;
+    margin-top: 14px; font-weight: 600; letter-spacing: 0.3px;
+  }
+  .screen-caption span { color: var(--primary); }
+</style>
+</head>
+<body>
+
+<h1>Connex</h1>
+<p class="subtitle">Interactive App Prototype — Click screens below to explore</p>
+
+<div class="nav-pills">
+  <div class="pill active" onclick="showScreen('splash', this)">🚀 Splash</div>
+  <div class="pill" onclick="showScreen('intent', this)">🎯 Intent Prompt</div>
+  <div class="pill" onclick="showScreen('feed', this)">📰 Home Feed</div>
+  <div class="pill" onclick="showScreen('reels', this)">🎬 Reels</div>
+  <div class="pill" onclick="showScreen('profile', this)">👤 Profile</div>
+</div>
+
+<div class="phone-wrap">
+  <div class="phone-frame">
+    <div class="btn-side vol"></div>
+    <div class="btn-side pwr"></div>
+
+    <!-- SPLASH SCREEN -->
+    <div class="screen active" id="splash">
+      <div class="splash-glow"></div>
+      <div class="splash-glow2"></div>
+      <div class="splash-logo">
+        <div class="splash-icon">
+          <!-- Connex SVG Logo: two interlocking orbit rings + central node with heart pulse -->
+          <svg class="connex-svg" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bgGrad" x1="0" y1="0" x2="74" y2="74" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#3B82F6"/>
+                <stop offset="50%" stop-color="#2563EB"/>
+                <stop offset="100%" stop-color="#1d4ed8"/>
+              </linearGradient>
+              <linearGradient id="cGrad" x1="0" y1="20" x2="74" y2="54" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#34D399"/>
+                <stop offset="50%" stop-color="#38BDF8"/>
+                <stop offset="100%" stop-color="#6EE7B7"/>
+              </linearGradient>
+              <linearGradient id="loopGrad" x1="20" y1="30" x2="60" y2="50" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#38BDF8"/>
+                <stop offset="50%" stop-color="#7DD3FC"/>
+                <stop offset="100%" stop-color="#34D399"/>
+              </linearGradient>
+              <filter id="softGlow">
+                <feGaussianBlur stdDeviation="1.8" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <filter id="iconShadow">
+                <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1d4ed8" flood-opacity="0.5"/>
+              </filter>
+            </defs>
+
+            <!-- Rounded square background — blue gradient like the image -->
+            <rect x="2" y="2" width="70" height="70" rx="20" fill="url(#bgGrad)" filter="url(#iconShadow)"/>
+            <!-- Subtle inner shine top-left -->
+            <rect x="2" y="2" width="70" height="70" rx="20"
+              fill="url(#shineGrad)" opacity="0.12"/>
+            <ellipse cx="28" cy="20" rx="22" ry="12"
+              fill="#ffffff" opacity="0.07"/>
+
+            <!-- OUTER C arc — large, sweeping -->
+            <path d="M52 18 C52 18 43 10 34 10 C19 10 9 21 9 37 C9 53 19 64 34 64 C43 64 52 56 52 56"
+              stroke="url(#cGrad)" stroke-width="3.2" stroke-linecap="round"
+              fill="none" filter="url(#softGlow)" opacity="0.95"/>
+
+            <!-- INFINITY LOOP inside the C -->
+            <!-- Left lobe -->
+            <path d="M37 37 C37 37 32 29 26 29 C21 29 18 33 18 37 C18 41 21 45 26 45 C32 45 37 37 37 37Z"
+              stroke="url(#loopGrad)" stroke-width="2.2" fill="none"
+              stroke-linecap="round" filter="url(#softGlow)" opacity="0.95"/>
+            <!-- Right lobe -->
+            <path d="M37 37 C37 37 42 29 48 29 C53 29 56 33 56 37 C56 41 53 45 48 45 C42 45 37 37 37 37Z"
+              stroke="url(#loopGrad)" stroke-width="2.2" fill="none"
+              stroke-linecap="round" filter="url(#softGlow)" opacity="0.95"/>
+
+            <!-- Center dot of infinity -->
+            <circle cx="37" cy="37" r="2" fill="#7DD3FC" opacity="0.9"/>
+
+            <!-- Top tip of C -->
+            <circle cx="52" cy="18" r="3" fill="#38BDF8" opacity="0.9" filter="url(#softGlow)"/>
+            <circle cx="52" cy="18" r="1.4" fill="#ffffff"/>
+
+            <!-- Bottom tip of C -->
+            <circle cx="52" cy="56" r="3" fill="#38BDF8" opacity="0.9" filter="url(#softGlow)"/>
+            <circle cx="52" cy="56" r="1.4" fill="#ffffff"/>
+          </svg>
+          </svg>
+        </div>
+        <div class="splash-name">
+          <span class="n-part">Conn</span><span class="x-part">ex</span>
+        </div>
+        <div class="splash-tagline">Feel it. Share it. Connect.</div>
+        <div class="splash-dots" style="margin-top:60px">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTENT SCREEN -->
+    <div class="screen" id="intent">
+      <div class="status-bar">
+        <span class="status-time">9:41</span>
+        <div class="status-icons">📶 🔋</div>
+      </div>
+      <div class="intent-body">
+        <div style="font-size:2.5rem;margin-bottom:4px">👋</div>
+        <div class="intent-greeting">Good morning,<br>Priya! What's your<br>vibe today?</div>
+        <div class="intent-sub">We'll show you exactly what you're in the mood for</div>
+
+        <div class="intent-card" onclick="showScreen('feed', document.querySelector('[onclick*=feed]'))">
+          <div class="ic-icon" style="background:linear-gradient(135deg,#ff6b6b22,#ff6b6b44)">📸</div>
+          <div class="ic-text">
+            <h3>Show me Posts</h3>
+            <p>Stories, photos & updates from friends</p>
+          </div>
+          <span style="color:var(--muted);margin-left:auto">›</span>
+        </div>
+
+        <div class="intent-card" onclick="showScreen('reels', document.querySelector('[onclick*=reels]'))">
+          <div class="ic-icon" style="background:linear-gradient(135deg,#ffd93d22,#ffd93d44)">🎬</div>
+          <div class="ic-text">
+            <h3>Play me Reels</h3>
+            <p>Short videos based on my current mood</p>
+          </div>
+          <span style="color:var(--muted);margin-left:auto">›</span>
+        </div>
+
+        <div class="intent-card">
+          <div class="ic-icon" style="background:linear-gradient(135deg,#6bcbff22,#6bcbff44)">😂</div>
+          <div class="ic-text">
+            <h3>Funny Reels only</h3>
+            <p>Make me laugh right now</p>
+          </div>
+          <span style="color:var(--muted);margin-left:auto">›</span>
+        </div>
+
+        <div class="intent-card">
+          <div class="ic-icon" style="background:linear-gradient(135deg,#6bffb822,#6bffb844)">💞</div>
+          <div class="ic-text">
+            <h3>Find new friends</h3>
+            <p>Meet people who share my feelings</p>
+          </div>
+          <span style="color:var(--muted);margin-left:auto">›</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEED SCREEN -->
+    <div class="screen" id="feed">
+      <div class="status-bar" style="padding-top:14px">
+        <span class="status-time">9:41</span>
+        <div class="status-icons">📶 🔋</div>
+      </div>
+      <div class="feed-header">
+        <div class="feed-title" style="font-family:'Pacifico',cursive;font-weight:400;background:linear-gradient(135deg,#0f1c4d,#1a4fd6);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Conn<span style="background:linear-gradient(135deg,#1a4fd6,#6366f1);-webkit-background-clip:text;-webkit-text-fill-color:transparent">ex</span></div>
+        <div class="feed-actions">
+          <div class="icon-btn">🔍</div>
+          <div class="icon-btn" style="position:relative">
+            💬
+            <span style="position:absolute;top:-2px;right:-2px;width:8px;height:8px;background:var(--primary);border-radius:50%;border:1.5px solid var(--bg)"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stories -->
+      <div class="stories-row">
+        <div class="story">
+          <div class="story-ring add-story">
+            <div class="story-avatar" style="background:var(--surface)">＋</div>
+          </div>
+          <span class="story-name">Your story</span>
+        </div>
+        <div class="story">
+          <div class="story-ring">
+            <div class="story-avatar">🧑</div>
+          </div>
+          <span class="story-name">Arjun</span>
+        </div>
+        <div class="story">
+          <div class="story-ring">
+            <div class="story-avatar">👩</div>
+          </div>
+          <span class="story-name">Sneha</span>
+        </div>
+        <div class="story">
+          <div class="story-ring" style="background:linear-gradient(135deg,var(--accent),var(--purple))">
+            <div class="story-avatar">🧒</div>
+          </div>
+          <span class="story-name">Rahul</span>
+        </div>
+        <div class="story">
+          <div class="story-ring">
+            <div class="story-avatar">👦</div>
+          </div>
+          <span class="story-name">Dev</span>
+        </div>
+      </div>
+
+      <!-- Posts -->
+      <div class="feed-scroll">
+        <!-- Post 1 -->
+        <div class="post-card">
+          <div class="post-header">
+            <div class="post-avatar" style="background:linear-gradient(135deg,#ff6b6b,#ffd93d)">🧑</div>
+            <div class="post-meta">
+              <h4>Arjun Sharma</h4>
+              <span>😊 Happy mood · 2h ago</span>
+            </div>
+            <div class="post-more">⋯</div>
+          </div>
+          <div class="mood-tag happy">😊 Happy Story</div>
+          <div class="post-text">Just got my dream job offer! 🎉 After months of hard work, it finally paid off. Feeling on top of the world right now!</div>
+          <div class="post-image">🎊</div>
+          <div class="post-actions">
+            <div class="action-btn"><span class="icon">🤍</span> 284</div>
+            <div class="action-btn"><span class="icon">💬</span> 42</div>
+            <div class="action-btn"><span class="icon">🔗</span> Share</div>
+            <div class="action-btn" style="margin-left:auto"><span class="icon">🔖</span></div>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post-card" style="margin-top:2px">
+          <div class="post-header">
+            <div class="post-avatar" style="background:linear-gradient(135deg,#6bcbff,#b06bff)">👩</div>
+            <div class="post-meta">
+              <h4>Sneha Patel</h4>
+              <span>💙 Sad mood · 5h ago</span>
+            </div>
+            <div class="post-more">⋯</div>
+          </div>
+          <div class="mood-tag sad">💙 Sharing my heart</div>
+          <div class="post-text">Missing my hometown so much today... The smell of Mom's cooking, evening walks by the river. City life is amazing but sometimes you just need that feeling of home 🏡</div>
+          <div class="post-actions">
+            <div class="action-btn"><span class="icon">🤍</span> 167</div>
+            <div class="action-btn"><span class="icon">💬</span> 28</div>
+            <div class="action-btn"><span class="icon">🔗</span> Share</div>
+            <div class="action-btn" style="margin-left:auto"><span class="icon">🔖</span></div>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post-card" style="margin-top:2px">
+          <div class="post-header">
+            <div class="post-avatar" style="background:linear-gradient(135deg,#ff6b6b,#b06bff)">👦</div>
+            <div class="post-meta">
+              <h4>Dev Kapoor</h4>
+              <span>❤️ Loving mood · 1h ago</span>
+            </div>
+            <div class="post-more">⋯</div>
+          </div>
+          <div class="mood-tag love">❤️ Love Story</div>
+          <div class="post-text">5 years with my best friend today 🥹 Every day feels like the first day. She's my home wherever I go. Grateful every single day 💕</div>
+          <div class="post-image" style="background:linear-gradient(135deg,#2a0a1e,#1a0a2e)">💑</div>
+          <div class="post-actions">
+            <div class="action-btn"><span class="icon">🤍</span> 521</div>
+            <div class="action-btn"><span class="icon">💬</span> 89</div>
+            <div class="action-btn"><span class="icon">🔗</span> Share</div>
+            <div class="action-btn" style="margin-left:auto"><span class="icon">🔖</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-nav">
+        <div class="nav-item active" onclick="showScreen('feed', document.querySelector('[onclick*=feed]'))">
+          <div class="nav-icon-wrap">🏠</div>
+          <span class="nav-label">Home</span>
+        </div>
+        <div class="nav-item" onclick="showScreen('reels', document.querySelector('[onclick*=reels]'))">
+          <div class="nav-icon-wrap">🎬</div>
+          <span class="nav-label">Reels</span>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon-wrap" style="background:var(--primary);width:42px;height:32px;border-radius:12px;font-size:1.2rem">＋</div>
+          <span class="nav-label">Post</span>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon-wrap">👥</div>
+          <span class="nav-label">Friends</span>
+        </div>
+        <div class="nav-item" onclick="showScreen('profile', document.querySelector('[onclick*=profile]'))">
+          <div class="nav-icon-wrap">👤</div>
+          <span class="nav-label">Me</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- REELS SCREEN -->
+    <div class="screen" id="reels">
+      <div class="reel-container">
+        <div class="reel-bg">🎭</div>
+        <div style="position:absolute;top:0;left:0;right:0;padding:44px 16px 0;display:flex;justify-content:space-between;align-items:center;z-index:10">
+          <div style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800">Reels</div>
+          <div style="background:rgba(26,79,214,0.12);border:1px solid #1a4fd6;padding:4px 12px;border-radius:20px;font-size:0.72rem;font-weight:700;color:#1a4fd6">😊 Happy Feed</div>
+        </div>
+        <div class="reel-side">
+          <div class="reel-action">
+            <div class="reel-action-icon">❤️</div>
+            <span>12.4K</span>
+          </div>
+          <div class="reel-action">
+            <div class="reel-action-icon">💬</div>
+            <span>842</span>
+          </div>
+          <div class="reel-action">
+            <div class="reel-action-icon">↗️</div>
+            <span>Share</span>
+          </div>
+          <div class="reel-action">
+            <div class="reel-action-icon">⋯</div>
+            <span>More</span>
+          </div>
+        </div>
+        <div class="reel-overlay">
+          <div class="reel-progress">
+            <div class="progress-seg"><div class="progress-fill"></div></div>
+            <div class="progress-seg"></div>
+            <div class="progress-seg"></div>
+            <div class="progress-seg"></div>
+          </div>
+          <div style="height:14px"></div>
+          <div class="reel-user">
+            <div class="reel-avatar">🧑</div>
+            <div class="reel-user-info">
+              <h4>rahulcreates</h4>
+              <p>Mumbai · 128K followers</p>
+            </div>
+            <button class="follow-btn">+ Follow</button>
+          </div>
+          <div class="reel-mood">🤖 Connex matched this to your <strong style="color:#ffd93d">happy</strong> mood</div>
+          <div class="reel-caption">When your whole squad surprises you on your birthday 🎂🥹 This is what friendship looks like! #Friends #Mumbai #Connex</div>
+        </div>
+      </div>
+
+      <div class="bottom-nav">
+        <div class="nav-item" onclick="showScreen('feed', document.querySelector('[onclick*=feed]'))">
+          <div class="nav-icon-wrap">🏠</div>
+          <span class="nav-label">Home</span>
+        </div>
+        <div class="nav-item active" onclick="showScreen('reels', document.querySelector('[onclick*=reels]'))">
+          <div class="nav-icon-wrap">🎬</div>
+          <span class="nav-label">Reels</span>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon-wrap" style="background:var(--primary);width:42px;height:32px;border-radius:12px;font-size:1.2rem">＋</div>
+          <span class="nav-label">Post</span>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon-wrap">👥</div>
+          <span class="nav-label">Friends</span>
+        </div>
+        <div class="nav-item" onclick="showScreen('profile', document.querySelector('[onclick*=profile]'))">
+          <div class="nav-icon-wrap">👤</div>
+          <span class="nav-label">Me</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE SCREEN -->
+    <div class="screen" id="profile" style="overflow-y:auto;display:none;flex-direction:column">
+      <div class="profile-header">
+        <div class="status-bar" style="padding:0 0 12px">
+          <span style="font-size:0.78rem;font-weight:800">9:41</span>
+          <div style="display:flex;gap:5px;font-size:0.7rem">📶 🔋</div>
+        </div>
+        <div class="profile-top">
+          <div class="profile-pic">👩</div>
+          <div class="profile-info">
+            <div class="profile-name">Umesh M C</div>
+            <div class="profile-handle">@umesh_mc · Mumbai</div>
+            <div class="profile-bio">Sharing my world, one mood at a time 🌸 Chai lover ☕ Dreamer ✨</div>
+          </div>
+        </div>
+        <div class="profile-stats">
+          <div class="stat-item">
+            <div class="stat-num">248</div>
+            <div class="stat-label">Posts</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4.2K</div>
+            <div class="stat-label">Friends</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">12.8K</div>
+            <div class="stat-label">Followers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">87%</div>
+            <div class="stat-label">Mood Score</div>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <div class="prof-btn primary">Edit Profile</div>
+          <div class="prof-btn">Share</div>
+          <div class="prof-btn" style="flex:0;padding:10px 12px">⚙️</div>
+        </div>
+      </div>
+
+      <div class="mood-history">
+        <div class="section-label">My Mood Journal</div>
+        <div class="mood-timeline">
+          <div class="mood-entry">
+            <div class="mood-emoji">😊</div>
+            <div class="mood-info">
+              <h4>Happy</h4>
+              <p>Got that job offer! Celebrating 🎉</p>
+            </div>
+            <div class="mood-time">Today</div>
+          </div>
+          <div class="mood-entry">
+            <div class="mood-emoji">💙</div>
+            <div class="mood-info">
+              <h4>Nostalgic</h4>
+              <p>Missing home and family 🏡</p>
+            </div>
+            <div class="mood-time">Yesterday</div>
+          </div>
+          <div class="mood-entry">
+            <div class="mood-emoji">❤️</div>
+            <div class="mood-info">
+              <h4>Grateful</h4>
+              <p>Quality time with loved ones 💕</p>
+            </div>
+            <div class="mood-time">2 days ago</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-grid">
+        <div class="section-label">My Posts</div>
+        <div class="grid-row">
+          <div class="grid-cell">🎊</div>
+          <div class="grid-cell">🌅</div>
+          <div class="grid-cell">☕</div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell">🌸</div>
+          <div class="grid-cell">🎵</div>
+          <div class="grid-cell">🏙️</div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell">🌊</div>
+          <div class="grid-cell">🎂</div>
+          <div class="grid-cell">🌿</div>
+        </div>
+      </div>
+
+      <div style="height:80px"></div>
+
+      <div class="bottom-nav">
+        <div class="nav-item" onclick="showScreen('feed', document.querySelector('[onclick*=feed]'))">
+          <div class="nav-icon-wrap">🏠</div>
+          <span class="nav-label">Home</span>
+        </div>
+        <div class="nav-item" onclick="showScreen('reels', document.querySelector('[onclick*=reels]'))">
+          <div class="nav-icon-wrap">🎬</div>
+          <span class="nav-label">Reels</span>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon-wrap" style="background:var(--primary);width:42px;height:32px;border-radius:12px;font-size:1.2rem">＋</div>
+          <span class="nav-label">Post</span>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon-wrap">👥</div>
+          <span class="nav-label">Friends</span>
+        </div>
+        <div class="nav-item active" onclick="showScreen('profile', document.querySelector('[onclick*=profile]'))">
+          <div class="nav-icon-wrap">👤</div>
+          <span class="nav-label">Me</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- phone-frame -->
+</div><!-- phone-wrap -->
+
+<div class="screen-caption" id="caption">
+  <span>Splash Screen</span> — App launch with branding
+</div>
+
+<script>
+const captions = {
+  splash: '<span>Splash Screen</span> — App launch & branding',
+  intent: '<span>Intent Prompt</span> — Your unique feature: ask what user wants to see',
+  feed: '<span>Home Feed</span> — Posts with mood tags (Happy 😊, Sad 💙, Love ❤️)',
+  reels: '<span>Reels Screen</span> — Mood-matched reels with AI label',
+  profile: '<span>Profile</span> — Mood journal, posts grid & stats'
+};
+
+function showScreen(id, pill) {
+  document.querySelectorAll('.screen').forEach(s => {
+    s.style.display = 'none';
+    s.classList.remove('active');
+  });
+  const screen = document.getElementById(id);
+  screen.style.display = 'flex';
+  screen.classList.add('active');
+
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  if (pill) pill.classList.add('active');
+
+  document.getElementById('caption').innerHTML = captions[id] || '';
+}
+</script>
+
+  <script>
+    // Auto-advance from splash screen after 2.5 seconds
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        if (typeof showScreen === 'function') {
+          showScreen('intent');
+        } else {
+          document.querySelectorAll('.screen').forEach(s => {
+            s.style.display = 'none';
+            s.classList.remove('active');
+          });
+          const intent = document.getElementById('intent');
+          if (intent) {
+            intent.style.display = 'flex';
+            intent.classList.add('active');
+          }
+        }
+      }, 2500);
+    });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('Connex SW registered:', reg.scope))
+          .catch(err => console.log('SW error:', err));
+      });
+    }
+
+    // Auto-prompt install banner
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const banner = document.getElementById('install-banner');
+      if (banner) banner.style.display = 'flex';
+    });
+
+    function installApp() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(() => {
+          deferredPrompt = null;
+          const banner = document.getElementById('install-banner');
+          if (banner) banner.style.display = 'none';
+        });
+      }
+    }
+
+    window.addEventListener('appinstalled', () => {
+      const banner = document.getElementById('install-banner');
+      if (banner) banner.style.display = 'none';
+    });
+  </script>
+
+  <!-- Install Banner -->
+  <div id="install-banner" style="display:none;position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+    background:linear-gradient(135deg,#2563EB,#38BDF8);color:#fff;padding:14px 24px;border-radius:20px;
+    align-items:center;gap:14px;z-index:9999;box-shadow:0 8px 32px rgba(37,99,235,0.4);
+    font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:700;max-width:340px;width:90%;">
+    <div style="font-size:1.6rem">📲</div>
+    <div>
+      <div style="font-size:0.95rem;font-weight:800">Install Connex</div>
+      <div style="font-size:0.75rem;opacity:0.85">Add to your home screen</div>
+    </div>
+    <button onclick="installApp()" style="background:#fff;color:#2563EB;border:none;padding:8px 16px;
+      border-radius:12px;font-weight:800;font-size:0.8rem;cursor:pointer;white-space:nowrap;">Install</button>
+    <span onclick="document.getElementById('install-banner').style.display='none'"
+      style="cursor:pointer;opacity:0.7;font-size:1.2rem;margin-left:-6px">✕</span>
+  </div>
+</body>
+</html>
