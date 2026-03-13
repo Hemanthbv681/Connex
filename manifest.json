@@ -2,9 +2,10 @@
   "name": "Connex",
   "short_name": "Connex",
   "description": "Feel it. Share it. Connect.",
-  "start_url": "/index.html",
+  "start_url": "/Connex/index.html",
+  "scope": "/Connex/",
   "display": "standalone",
-  "background_color": "#f0f4ff",
+  "background_color": "#EFF6FF",
   "theme_color": "#2563EB",
   "orientation": "portrait",
   "icons": [
@@ -12,16 +13,26 @@
       "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "categories": ["social", "lifestyle"],
-  "screenshots": [],
-  "lang": "en"
+  "categories": ["social", "lifestyle"]
 }
