@@ -1,0 +1,38 @@
+{
+  "name": "Connex",
+  "short_name": "Connex",
+  "description": "Feel it. Share it. Connect.",
+  "start_url": "/Connex/index.html",
+  "scope": "/Connex/",
+  "display": "standalone",
+  "background_color": "#EFF6FF",
+  "theme_color": "#2563EB",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://hemanthbv681.github.io/Connex/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://hemanthbv681.github.io/Connex/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://hemanthbv681.github.io/Connex/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://hemanthbv681.github.io/Connex/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["social", "lifestyle"]
+}
